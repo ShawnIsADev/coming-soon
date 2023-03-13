@@ -16,7 +16,7 @@ cube.addEventListener("click", animatedOnClickCube)
 
 
 function animate(){
-    gsap.from(bar, {duration: 2, x: () => Math.random() * 400 - 200, rotate: -360, stagger: 0.25})
+    gsap.from(bar, {duration: 2, x: -100, rotate: -360, stagger: 0.25})
 
 }
 
@@ -26,11 +26,11 @@ function animatedOnClickCube(){
     gsap.from(backOfCube, {duration: 5, x: () => Math.random() * 400 - 200, rotate: -360})
     gsap.from(rightOfCube, {duration: 6, x: () => Math.random() * 400 - 200, rotate: 360})
     gsap.from(leftOfCube, {duration: 5, x: () => Math.random() * 400 - 200, rotate: -360})
-    gsap.from(bottomOfCube, {duration: 7, x: () => Math.random() * 400 - 200, rotate: 360})
+    gsap.from(bottomOfCube, {duration: 6, x: () => Math.random() * 400 - 200, rotate: 1080})
 }
 
 
 
-gsap.from(bar, {duration: 2, x: () => Math.random() * 400 - 200, rotate: 360, stagger: 0.25})
+gsap.from(bar, {duration: 2, x: -100, y: 100, rotate: -360, stagger: 0.25})
 gsap.from(h1, {duration: 5, y: () => Math.random() * 400 - 200, rotate: 360, stagger: 0.25})
-gsap.from(shadow, {duration: 2, y: () => Math.random() * 400 - 200, rotate: 360})
+gsap.from(shadow, {duration:1.5, y: () => Math.random() * 400 - 200, rotate: 1080})
